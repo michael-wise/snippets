@@ -1,0 +1,13 @@
+Misc reminders to jog my memory.
+
+#§
+#https://docs.python.org/3/library/locale.html#locale.getpreferredencoding.
+#Returns encoding used by python for text data.
+#The way in which getpreferredencoding() fetches language preference is os dependent.
+
+import locale
+locale.getpreferredencoding()
+#§
+
+
+
