@@ -7,7 +7,13 @@ Misc reminders to jog my memory.
 
 import locale
 locale.getpreferredencoding()
+
 #§
+#Open jupyter server with directory listing in cwd.
+jupyter notebook .
 
-
+#§
+[1].remove(1) #removes first element of value arg
+[1].pop(0) #removes element at index of arg and returns it
+del mylist[0] #like pop, but does not return (and it has different error type)
 
