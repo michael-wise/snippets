@@ -17,3 +17,10 @@ jupyter notebook .
 [1].pop(0) #removes element at index of arg and returns it
 del mylist[0] #like pop, but does not return (and it has different error type)
 
+#§
+virtualbox nat port forwarding (i.e. nginx)
+Open virtual machine’s settings window. Select network pane. Ensure NAT is checked. Expand Advanced section and click Port Forwarding.
+Host and/or guest IP are optional (leave blank). 
+The host port is the port from which you want to access the web server from the outside i.e. 2215.
+The guest port is the port on which your web server is actually running within the vm i.e. 80.
+Now from the host you can access via localhost:2215.
