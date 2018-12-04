@@ -24,3 +24,10 @@ Host and/or guest IP are optional (leave blank).
 The host port is the port from which you want to access the web server from the outside i.e. 2215.
 The guest port is the port on which your web server is actually running within the vm i.e. 80.
 Now from the host you can access via localhost:2215.
+
+#§
+The uwsgi-docs for nginx is well written and has some excellent pointers 
+  (i.e. for dynamic uwsgi routing, some situations call for tcp instead of unix sock, or allow nginx to serve static files directly)  
+  https://uwsgi-docs.readthedocs.io/en/latest/Nginx.html
+uwsgi_params is included with nginx by default.
+Only special need for uwsgi config in nginx is to `include uwsgi_params;` and `uwsgi_pass unix:/path_to_unix_sock` within our `server { loc {` block.
